@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+      <title>Team</title>
+      <link rel="stylesheet" href="style7.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+      <body>
+        <div class="container">
+            <div class="navbar">
+            <img src="logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="homepage.html#about">ABOUT</a></li>
+                    <li><a href="team.html">CONTACT US</a></li>      
+            </ul>
+            </nav>
+            <div class="dropdown">
+                <button class="dropbtn" style="width: 50%; height: 50%;">
+                    <img src="menu.png" style="width: 20px; height: 20px;" ></button>
+                  
+            
+                <div class="dropdown-content">
+                  <h5><a href="#update">ADMIN PROFILE</a>
+                  <a href="#update">CHANGE PASSWORD</a>
+                  <a href="purple login.html">LOG OUT</a></h5>
+                </div>
+              </div>
+              </div>
+              <div class="wrapper"id="update" >
+                <div class="title-text">
+            
+                   <div class="title signup">
+                     User Profile
+                   </div>
+                </div>
+                <div class="form-container">
+                  
+                   <div class="form-inner">
+                      
+                      <form action="#" class="signup">
+       
+                       <p>&nbsp;</p>
+       
+                       <div class="field">
+                           <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="field">
+                           <input type="text" placeholder="Last Name" required>
+                        </div>
+                         <div class="field">
+                            <input type="text" placeholder="Email Address" required>
+                         </div>
+                         <div class="field">
+                            <input type="password" placeholder="Password" required>
+                         </div>
+                         <div class="field">
+                            <input type="password" placeholder="Confirm password" required>
+                         </div>
+                         <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Update">
+                         </div>
+                         <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Cancel">
+                         </div>
+                      </form>
+                   </div>
+                </div>
+             </div>
+             <script>
+                
+
+                const signupLink = document.querySelector("form .signup-link a");  
+                signupLink.onclick = (()=>{
+                  signupBtn.click();
+                  return false;
+                });
+             </script>
+             </div>
+      
+              </body>
+              </html>

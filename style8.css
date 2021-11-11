@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto',sans-serif;
+    
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('./yellow.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    
+    }
+    h5{
+        font-size: 10px;
+        color: #ffffff;
+        text-transform: capitalize;
+        font-weight: 200;
+        position: relative;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .navbar { 
+        height: 12%;
+        display: flex;
+        align-items: center;
+    }
+    .logo { 
+        width: 30px;
+        cursor: pointer;
+    }
+    .menu-icon{ 
+        width: 10px;
+        cursor: pointer;
+      
+    }
+    nav{ 
+    flex: 1;
+    text-align: right;
+    }
+
+    nav ul li { 
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+    nav ul li a{ 
+    text-decoration: none;
+    color:#fff;
+    font-size: 13px;
+    }
+    .dropbtn {
+        margin-left: 50px;
+        background-color: #fca400;
+        color: white;
+        padding: 6px;
+        border-radius: 20PX;
+        font-size: 16px;
+        border: none;
+      }
+      
+      .dropdown {
+          margin: top 2px;
+        position: relative;
+        left: -20px;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: rgb(247, 168, 66);}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #FFFF00;}
+
+      .pricingdiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+      }
+      
+      .pricingdiv ul.theplan{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        color: white;
+        background: #7c3ac9;
+        position: relative;
+        width: 250px; /* width of each table */
+        margin-right: 10px; /* spacing between tables */
+        margin-bottom: 1em;
+        transition: all .5s;
+      }
+      
+      .pricingdiv ul.theplan:hover{ /* when mouse hover over pricing table */
+        transform: scale(1.05);
+        transition: all .5s;
+        z-index: 100;
+        box-shadow: 0 0 10px gray;
+      }
+      
+      .pricingdiv ul.theplan li{
+        margin: 10px 20px;
+        position: relative;
+      }
+      
+      .pricingdiv ul.theplan li.title{
+        font-size: 150%;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        text-transform: uppercase;
+        border-bottom: 5px solid white;
+      }
+      
+      .pricingdiv ul.theplan:nth-of-type(2){
+        background: #e53499;
+      }
+          
+      .pricingdiv ul.theplan:nth-of-type(3){
+        background: #2a2cc8;
+      }
+      
+      .pricingdiv ul.theplan:last-of-type{ /* remove right margin in very last table */
+        margin-right: 0;
+      }
+      
+      /*very last LI within each pricing UL */
+      .pricingdiv ul.theplan li:last-of-type{
+        text-align: center;
+        margin-top: auto; /*align last LI (price botton li) to the very bottom of UL */
+      }  
+      
+      .pricingdiv a.pricebutton{
+        background: white;
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+        margin: 10px auto;
+        border-radius: 5px;
+        color: navy;
+        text-transform: uppercase;
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .pricingdiv ul.theplan{
+          border-radius: 0;
+          width: 100%;
+          margin-right: 0;
+        }
+        
+        .pricingdiv ul.theplan:hover{
+          transform: none;
+          box-shadow: none;
+        }
+        
+        .pricingdiv a.pricebutton{
+          display: block;
+        }
+      }
+      .custom-select {
+        position: relative;
+        margin-left: 40%;
+        margin-bottom: 10%;
+        font-family: Arial;
+      }
+      
+      .custom-select select {
+        display: none; /*hide original SELECT element:*/
+      }
+      
+      .select-selected {
+        background-color: DodgerBlue;
+      }
+      
+      /*style the arrow inside the select element:*/
+      .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent;
+      }
+      
+      /*point the arrow upwards when the select box is open (active):*/
+      .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #fff transparent;
+        top: 7px;
+      }
+      
+      /*style the items (options), including the selected item:*/
+      .select-items div,.select-selected {
+        color: #ffffff;
+        padding: 8px 16px;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      /*style items (options):*/
+      .select-items {
+        position: absolute;
+        background-color: DodgerBlue;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+      }
+      
+      /*hide the items when the select box is closed:*/
+      .select-hide {
+        display: none;
+      }
+      
+      .select-items div:hover, .same-as-selected {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      
